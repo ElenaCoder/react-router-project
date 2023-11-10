@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary: #bc4123;
-  --secondary: #2b3452;
+  --primary: #B55A30;
+  --secondary: #363945;
 }
 body {
   margin: 0;
@@ -81,6 +81,11 @@ main {
   padding: 5px 20px;
   border-radius: 4px;
   margin: 20px 0;
+  border: 2px solid;
+}
+
+.faq .question :first-child {
+  color: var(--primary);
 }
 
 /* contact form */
@@ -99,17 +104,18 @@ form input, form textarea {
   color: var(--secondary);
 }
 form label span {
-  margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 
 /* careers list */
 .careers > a {
   display: block;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.3);
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
   text-decoration: none;
+  border: 2px solid;
 }
 
 .careers > a:hover{
@@ -133,10 +139,18 @@ form label span {
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
+  border: 2px solid;
+}
+
+.career-details:hover {
+  background: rgba(0,0,0,0.3);
 }
 
 .career-details h2 {
   color: var(--primary);
+}
+.career-details h2:hover {
+  color: #fff;
 }
 
 /* breadcrumbs */
