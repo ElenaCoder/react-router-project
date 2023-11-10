@@ -1,13 +1,4 @@
-import { useState } from 'react';
-import { Navigate } from 'react-router-dom';
-
 export default function About() {
-    const [user, setUser] = useState('elena');
-
-    if (!user) {
-        return <Navigate to='./' replace={true} />;
-    }
-
     return (
         <>
             <div className='about'>
@@ -33,8 +24,6 @@ export default function About() {
                     voluptatum totam id hic! Sapiente debitis quia illum officia
                     obcaecati provident nulla odio molestiae suscipit quasi.
                 </p>
-
-                <button onClick={() => setUser(null)}>Logout</button>
             </div>
         </>
     );
