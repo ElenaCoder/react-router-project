@@ -26,7 +26,7 @@ export default function CareerDetails() {
 export const careerDetailsLoader = async ({ params }) => {
     const { id } = params;
 
-    const res = await fetch('http://localhost:4000/careers/' + id);
+    const res = await fetch(`https://careers-5f87f-default-rtdb.europe-west1.firebasedatabase.app/careers/${id-1}.json`);
 
     if (!res.ok) {
         throw Error('Career not found.');
