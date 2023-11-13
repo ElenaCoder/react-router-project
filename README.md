@@ -26,14 +26,14 @@ The project's boilerplate was created using Vite.
 This project explores two options for working with a JSON file:
 
 1. **JSON Server:**
-   - The first option involves installing json-server module and running it using the command:
-     ```
-     npx json-server --watch data/db.json --port 4000
-     ```
-     This setup enables us to wrap the JSON file with API endpoints, allowing seamless interaction with `data/db.json` as if it were a REST API. This option was used during the development stage, but eventually, data was put into the Realtime Firebase Database.
+    The first option involves installing json-server module and running it using the command:
+    ```
+    npx json-server --watch data/db.json --port 4000
+    ```
+    This setup enables us to wrap the JSON file with API endpoints, allowing seamless interaction with `data/db.json` as if it were a REST API. This option was used during the development stage, but eventually, data was put into the Realtime Firebase Database.
 
 2. **Realtime Firebase Database:**
-   - The second option entails creating a Realtime Firebase Database. Data is imported from a JSON file, and necessary information is fetched from this remote database when required. The second option was chosen as the final implementation for this project.
+    The second option entails creating a Realtime Firebase Database. Data is imported from a JSON file, and necessary information is fetched from this remote database when required. The second option was chosen as the final implementation for this project.
 
 
 **Example of content of db.json file:**
@@ -64,22 +64,22 @@ This project explores two options for working with a JSON file:
 
 1. Clone the repository or download the source code.
 
-`git clone https://github.com/ElenaCoder/react-router-project`
+    `git clone https://github.com/ElenaCoder/react-router-project`
 
 3. Navigate to the right directory.
 
-`cd react-router-project`
+    `cd react-router-project`
 
 2. Install the dependencies.
 
-`npm install`
+    `npm install`
 
 
 ## Usage
 
 1. Start the development server.
 
-`npm run dev`
+    `npm run dev`
 
 2. This will start the development server, and you can view the React application in your web browser at http://localhost:5173.
 
