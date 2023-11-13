@@ -1,5 +1,5 @@
 import {
-    createHashRouter,
+    BrowserRouter,
     createRoutesFromElements,
     Route,
     RouterProvider,
@@ -22,7 +22,7 @@ import RootLayout from './layouts/RootLayout';
 import HelpLayout from './layouts/HelpLayout';
 import CareersLayout from './layouts/CareersLayout';
 
-const router = createHashRouter(
+const router = BrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout />}>
             <Route index element={<Home />} />
