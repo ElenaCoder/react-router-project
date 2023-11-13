@@ -24,8 +24,8 @@ import CareersLayout from './layouts/CareersLayout';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path='/' element={<RootLayout />}>
-            <Route index element={<Home />} />
+        <Route path='/react-router-project/' element={<RootLayout />}>
+            <Route path='home' element={<Home />} />
             <Route path='about' element={<About />} />
             <Route path='help' element={<HelpLayout />}>
                 <Route path='faq' element={<Faq />} />
