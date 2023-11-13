@@ -7,7 +7,7 @@ function Breadcrumbs() {
 
     const crumbs = location.pathname
         .split('/')
-        .filter((crumb) => crumb !== '')
+        .filter((crumb) => crumb !== '' && crumb !== 'react-router-project')
         .map((crumb) => {
             currentLink += `/${crumb}`;
             return (
