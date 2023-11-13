@@ -22,8 +22,9 @@ import RootLayout from './layouts/RootLayout';
 import HelpLayout from './layouts/HelpLayout';
 import CareersLayout from './layouts/CareersLayout';
 
-const router = BrowserRouter(
-    createRoutesFromElements(
+const router = BrowserRouter({
+    basename: '/react-router-project',
+    children: createRoutesFromElements(
         <Route path='/' element={<RootLayout />}>
             <Route index element={<Home />} />
             <Route path='about' element={<About />} />
@@ -52,7 +53,7 @@ const router = BrowserRouter(
             <Route path='*' element={<NotFound />} />
         </Route>,
     ),
-);
+});
 
 function App() {
     return <RouterProvider router={router} />;
