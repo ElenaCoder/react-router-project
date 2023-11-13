@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter,
+    createHashRouter,
     createRoutesFromElements,
     Route,
     RouterProvider,
@@ -22,7 +22,7 @@ import RootLayout from './layouts/RootLayout';
 import HelpLayout from './layouts/HelpLayout';
 import CareersLayout from './layouts/CareersLayout';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
     createRoutesFromElements(
         <Route path='/react-router-project/' element={<RootLayout />}>
             <Route index element={<Home />} />
